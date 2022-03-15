@@ -1,24 +1,16 @@
 import com.github.javafaker.Faker;
-import jdk.jfr.DataAmount;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.UtilityClass;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
 import org.threeten.bp.LocalDate;
-
 import com.codeborne.selenide.*;
-import org.threeten.bp.LocalDateTime;
 import org.threeten.bp.format.DateTimeFormatter;
-
 import java.time.Duration;
 import java.util.Locale;
-
-import static com.codeborne.selenide.Condition.exactText;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.*;
-import static java.util.stream.LongStream.range;
 
 
 public class SelenideTest {
