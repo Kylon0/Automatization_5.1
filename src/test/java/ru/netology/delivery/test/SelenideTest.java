@@ -14,9 +14,8 @@ public class SelenideTest {
 
     @Test
     void shouldGenerateTestData() {
-        DataClass.RegistrationInfo info = DataClass.DataGenerator.Registration.generateInfo("ru");
-        System.out.println(info);
-        String date1 = DataClass.DataGenerator.dataGenerate(5);
+        DataClass.RegistrationInfo info = DataClass.Registration.generateInfo("ru");
+        String date1 = DataClass.dataGenerate(5);
         open("http://localhost:9999");
         $("[data-test-id=city] input").setValue(info.city);
         $("[data-test-id=date] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
